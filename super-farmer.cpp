@@ -17,7 +17,6 @@ int main()
 
     GameStateManager* gameStateManager = &GameStateManager::getInstance();
     std::vector<Player> players;
-    //niech kostki beda statyczne moze idk
 
     for (int i = 0; i < player_num; i++) {
         players.emplace_back(i);
@@ -28,12 +27,9 @@ int main()
         
         Player* currentPlayer = &players[currentIndex];
         gameStateManager->setState(new ThrowState(currentPlayer,gameStateManager));
-        gameStateManager->run();
-
         std::string input;
         std::cout << "main loop" << std::endl;
         std::cin >> input;
-        std::cout << currentIndex;
         currentIndex = (currentIndex + 1) % players.size();
         if (input == "dupa") run = false;
     }

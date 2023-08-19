@@ -18,6 +18,7 @@ void ThrowState::run()
 	while (run) {
 		std::cout << player->toString() << std::endl;
 		std::cin >> input;
+		
 		if (input == "dupa") { run = false; }
 		else if (input == "r")
 		{
@@ -29,7 +30,13 @@ void ThrowState::run()
 			else std::cout << "You have already rolled the dice this round" << std::endl;
 		}
 		else if (input == "z") {
-			gameStateManager->setState(new TradeState(player, gameStateManager));
+			if (hasRolledDice) {
+				run = false;
+				gameStateManager->setState(new TradeState(player, gameStateManager));
+			}
+			else {
+				std::cout << "You need to roll the dice first" << std::endl;
+			}
 		}
 	}
 }
