@@ -25,7 +25,10 @@ std::string Player::toString() const {
     return result;
 }
 bool Player::won() {
-    return 0; //TODO
+    if ((animals.at(Animal::Rabbit) > 0) && (animals.at(Animal::Sheep) > 0) && (animals.at(Animal::Pig) > 0) && (animals.at(Animal::Pig) > 0) && (animals.at(Animal::Cow) > 0) && (animals.at(Animal::Horse) > 0)) {
+        return true;
+    }
+    return false;
 }
 
 std::string Player::animalToString(Animal* animal)
@@ -131,50 +134,114 @@ void Player::tradeRabbitsForSheep()
         this->subtractAnimalQuantity(Animal::Rabbit, 6);
         this->addAnimalQuantity(Animal::Sheep, 1);
     }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
 
 }
 
 void Player::tradeSheepForRabbits()
 {
-    player->subtractAnimalQuantity(Animal::Sheep, 1);
-    player->addAnimalQuantity(Animal::Rabbit, 6);
+    if (this->animals.at(Animal::Sheep) >= 1) {
+        this->subtractAnimalQuantity(Animal::Sheep, 1);
+        this->addAnimalQuantity(Animal::Rabbit, 6);
+    }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
 
 }
 
 void Player::tradeSheepForSmallDog()
 {
+    if (!this->hasSmallDog()) {
+        if (this->animals.at(Animal::Sheep) >= 1) {
+            this->subtractAnimalQuantity(Animal::Sheep, 1);
+            this->setSmallDog(true);
+        }
+        else std::cout << "You have too few animals to perform the trade" << std::endl;
+    }
+    else std::cout << "You already have small dog" << std::endl;
 }
 
 void Player::tradeSmallDogForSheep()
 {
+    if (this->hasSmallDog()) 
+    {
+        this->setSmallDog(0);
+        this->addAnimalQuantity(Animal::Sheep, 1);
+    }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
 }
 
 void Player::tradeSheepsForPig()
 {
+    if (this->animals.at(Animal::Sheep) >= 2) {
+        this->subtractAnimalQuantity(Animal::Sheep, 2);
+        this->addAnimalQuantity(Animal::Pig, 1);
+    }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
 }
 
 void Player::tradePigForSheeps()
 {
+    if (this->animals.at(Animal::Pig) >= 1) {
+        this->subtractAnimalQuantity(Animal::Pig, 1);
+        this->addAnimalQuantity(Animal::Sheep, 2);
+    }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
 }
 
 void Player::tradePigsForCow()
 {
+    if (this->animals.at(Animal::Pig) >= 3) {
+        this->subtractAnimalQuantity(Animal::Pig, 3);
+        this->addAnimalQuantity(Animal::Cow, 1);
+    }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
+}
+void Player::tradeCowForPigs() 
+{
+    if (this->animals.at(Animal::Cow) >= 1) {
+        this->subtractAnimalQuantity(Animal::Cow, 1);
+        this->addAnimalQuantity(Animal::Pig, 3);
+    }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
 }
 
 void Player::tradeCowForBigDog()
 {
+    if (!this->hasBigDog()) {
+        if (this->animals.at(Animal::Cow) >= 1) {
+            this->subtractAnimalQuantity(Animal::Cow, 1);
+            this->setBigDog(true);
+        }
+        else std::cout << "You have too few animals to perform the trade" << std::endl;
+    }
+    else std::cout << "You already have big dog" << std::endl;
 }
 
 void Player::tradeBigDogForCow()
 {
+    if (this->hasBigDog()) {
+        this->setBigDog(0);
+        this->addAnimalQuantity(Animal::Cow, 1);
+    }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
 }
 
 void Player::tradeCowsForHorse()
 {
+    if (this->animals.at(Animal::Cow) >= 2) {
+        this->subtractAnimalQuantity(Animal::Cow, 2);
+        this->addAnimalQuantity(Animal::Horse, 1);
+    }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
 }
 
 void Player::tradeHorseForCows()
 {
+    if (this->animals.at(Animal::Horse) >= 1) {
+        this->subtractAnimalQuantity(Animal::Horse, 1);
+        this->addAnimalQuantity(Animal::Cow, 2);
+    }
+    else std::cout << "You have too few animals to perform the trade" << std::endl;
 }
 
 

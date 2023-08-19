@@ -18,8 +18,8 @@ void TradeState::run()
 		if (input == 'z') { run = false; }
 
 		switch (input) {
-			case 'q': std::cout << input; break; // 6 rabbits for sheep
-			case 'w': std::cout << input; break; // sheep for 6 rabbits
+			case 'q': player->tradeRabbitsForSheep(); break; // 6 rabbits for sheep
+			case 'w': player->tradeSheepForRabbits(); break; // sheep for 6 rabbits
 
 			case 'e': std::cout << input; break; //small dog for sheep
 			case 'r': std::cout << input; break; // sheep for small dog
@@ -36,59 +36,7 @@ void TradeState::run()
 			case 'g': std::cout << input; break; // 2 cows for horse 
 			case 'h': std::cout << input; break; // horse for 2 cows
 
-			case 'z': run = false; break;
-
 		}
 
 	}
-}
-
-void TradeState::tradeRabbitsForSheep()
-{
-	player->subtractAnimalQuantity(Animal::Rabbit, 6);
-	player->addAnimalQuantity(Animal::Sheep, 1);
-
-}
-
-void TradeState::tradeSheepForRabbits()
-{
-	player->subtractAnimalQuantity(Animal::Sheep, 1);
-	player->addAnimalQuantity(Animal::Rabbit, 6);
-	
-}
-
-void TradeState::tradeSheepForSmallDog()
-{
-}
-
-void TradeState::tradeSmallDogForSheep()
-{
-}
-
-void TradeState::tradeSheepsForPig()
-{
-}
-
-void TradeState::tradePigForSheeps()
-{
-}
-
-void TradeState::tradePigsForCow()
-{
-}
-
-void TradeState::tradeCowForBigDog()
-{
-}
-
-void TradeState::tradeBigDogForCow()
-{
-}
-
-void TradeState::tradeCowsForHorse()
-{
-}
-
-void TradeState::tradeHorseForCows()
-{
 }
