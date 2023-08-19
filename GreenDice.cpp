@@ -33,12 +33,8 @@ Animal GreenDice::roll()
     case 10:
         return Animal::Pig; break;
     case 11:
-        return Animal::Horse; break;
+        return Animal::Cow; break;
     case 12:
-        return Animal::Fox; break;
-    default:
-        // W razie b³êdu zwracamy jakiœ domyœlny zwierzak
-        return Animal::Rabbit; break;
-
+        return Animal::Wolf; break;
     }
 }

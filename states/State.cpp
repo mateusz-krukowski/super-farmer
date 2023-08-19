@@ -12,6 +12,7 @@ State::State(Player* player, GameStateManager* gameStateManager)
 }
 State::~State()
 {
+	player = nullptr;
 }
 
 void State::run()

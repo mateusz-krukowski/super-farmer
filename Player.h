@@ -1,5 +1,8 @@
 #include <iostream>
+#include <unordered_map>
 #include <string>
+#include <cmath>
+
 
 #include "Dice.h"
 #include "RedDice.h"
@@ -10,44 +13,47 @@
 class Player
 {
 private:
+    unsigned char index;
     RedDice* redDice;
     GreenDice* greenDice;
 	bool smallDog;
 	bool bigDog;
-	unsigned char index;
-	unsigned char rabbits;
-	unsigned char sheeps;
-	unsigned char pigs;
-	unsigned char cows;
-	unsigned char horses;
+    std::unordered_map<Animal, unsigned char> animals;
 
 public:
 	Player(unsigned char index);
 	std::string toString() const;
 	bool won();
-    std::string animalToString(Animal animal);
-    void handleDiceOutcome(Animal first, Animal second); //TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    std::string animalToString(Animal* animal);
+    void addAnimalQuantity(Animal animal, unsigned char quantity);
+    void subtractAnimalQuantity(Animal animal, unsigned char quantity);
+    void handleDiceOutcome(Animal red, Animal green);
     void rollTheDice();
+    void handleRolledAnimalOnce(Animal animal);
+    void handleRolledAnimalTwice(Animal animal);
+
+    // performing trades
+    void tradeRabbitsForSheep();
+    void tradeSheepForRabbits();
+    void tradeSheepForSmallDog();
+    void tradeSmallDogForSheep();
+    void tradeSheepsForPig();
+    void tradePigForSheeps();
+    void tradePigsForCow();
+    void tradeCowForBigDog();
+    void tradeBigDogForCow();
+    void tradeCowsForHorse();
+    void tradeHorseForCows();
 
     // Getters
     bool hasSmallDog() const;
     bool hasBigDog() const;
-    unsigned char getIndex() const;
-    unsigned char getRabbits() const;
-    unsigned char getSheeps() const;
-    unsigned char getPigs() const;
-    unsigned char getCows() const;
-    unsigned char getHorses() const;
+    std::unordered_map<Animal, unsigned char>& getAnimals() const;
 
     // Setters
     void setSmallDog(bool value);
     void setBigDog(bool value);
-    void setIndex(unsigned char value);
-    void setRabbits(unsigned char value);
-    void setSheeps(unsigned char value);
-    void setPigs(unsigned char value);
-    void setCows(unsigned char value);
-    void setHorses(unsigned char value);
+    void setAnimalQuantity(Animal animal, unsigned char quantity);
 
 };
 

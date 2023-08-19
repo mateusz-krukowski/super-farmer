@@ -37,9 +37,6 @@ Animal RedDice::roll()
         return Animal::Horse; break;
     case 12:
         return Animal::Fox; break;
-    default:
-        // W razie b³êdu zwracamy jakiœ domyœlny zwierzak
-        return Animal::Rabbit; break;
     }
 }
 	

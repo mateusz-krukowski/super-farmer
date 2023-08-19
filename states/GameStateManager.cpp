@@ -34,8 +34,10 @@ void GameStateManager::setState(State* state)
 {
     if(!(states.empty())){
         pop();
+
     }
     push(state);
+    run();
 
 }
 
