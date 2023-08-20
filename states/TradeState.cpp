@@ -21,20 +21,20 @@ void TradeState::run()
 			case 'q': player->tradeRabbitsForSheep(); break; // 6 rabbits for sheep
 			case 'w': player->tradeSheepForRabbits(); break; // sheep for 6 rabbits
 
-			case 'e': std::cout << input; break; //small dog for sheep
-			case 'r': std::cout << input; break; // sheep for small dog
+			case 'e': player->tradeSheepForSmallDog(); break; // sheep for small dog
+			case 'r': player->tradeSmallDogForSheep(); break; //small dog for sheep
 
-			case 't': std::cout << input; break; // 2 sheeps for pig
-			case 'y': std::cout << input; break; // pig for 2 sheeps
+			case 't': player->tradeSheepsForPig(); break; // 2 sheeps for pig
+			case 'y': player->tradePigForSheeps(); break; // pig for 2 sheeps
 
-			case 'a': std::cout << input; break; // 3 pigs for cow
-			case 's': std::cout << input; break; // cow for 3 pigs
+			case 'a': player->tradePigsForCow(); break; // 3 pigs for cow
+			case 's': player->tradeCowForPigs(); break; // cow for 3 pigs
 
-			case 'd': std::cout << input; break; //cow for big dog
-			case 'f': std::cout << input; break; //big dog for cow
+			case 'd': player->tradeCowForBigDog() break; //cow for big dog
+			case 'f': player->tradeBigDogForCow(); break; //big dog for cow
 
-			case 'g': std::cout << input; break; // 2 cows for horse 
-			case 'h': std::cout << input; break; // horse for 2 cows
+			case 'g': player->tradeCowsForHorse(); break; // 2 cows for horse 
+			case 'h': player->tradeHorseForCows(); break; // horse for 2 cows
 
 		}
 
