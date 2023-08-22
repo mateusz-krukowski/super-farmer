@@ -3,7 +3,7 @@
 
 class TradeState : public State {
 public:
-	TradeState(Player* player, GameStateManager* gameStateManager);
+	TradeState(GameStateManager* gameStateManager);
 	void run() override;
 
 };

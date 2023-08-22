@@ -1,20 +1,24 @@
 #include "State.h"
 
+
+State::State(GameStateManager* gameStateManager, AssetManager* assetManager)
+{
+
+	this->gameStateManager = gameStateManager;
+	this->assetManager = assetManager;
+}
+
+State::State(GameStateManager* gameStateManager)
+{
+}
+
 State::State()
 {
 }
 
-State::State(Player* player, GameStateManager* gameStateManager)
-{
-
-	this->player = player;
-	this->gameStateManager = gameStateManager;
-}
 State::~State()
 {
-	player = nullptr;
-}
-
-void State::run()
-{
+	this->player = nullptr;
+	this->gameStateManager = nullptr;
+	this->assetManager = nullptr;
 }

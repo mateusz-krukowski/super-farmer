@@ -1,14 +1,21 @@
 #include "GameStateManager.h"
 
 GameStateManager::GameStateManager()
-{
+{   
+    AssetManager* assetManager = &AssetManager::getInstance();
+
     states = std::stack<State*>();
 }
 
 GameStateManager& GameStateManager::getInstance()
 {
-    static GameStateManager instance;  // Jedyna instancja klasy
+    static GameStateManager instance; 
     return instance;
+}
+
+void GameStateManager::draw()
+{
+    this->peek()->draw();
 }
 
 void GameStateManager::push(State* state)
