@@ -3,8 +3,8 @@
 GameStateManager::GameStateManager()
 {   
     AssetManager* assetManager = &AssetManager::getInstance();
-
     states = std::stack<State*>();
+    this->push(new MenuState(this, assetManager));
 }
 
 GameStateManager& GameStateManager::getInstance()
@@ -44,7 +44,6 @@ void GameStateManager::setState(State* state)
 
     }
     push(state);
-    run();
 
 }
 

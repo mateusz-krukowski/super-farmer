@@ -9,7 +9,21 @@
 ThrowState::ThrowState(GameStateManager* gameStateManager) : State(gameStateManager)
 {	
 	
-	std::cout << "ThrowState" << std::endl;
+	
+}
+ThrowState::ThrowState(GameStateManager* gameStateManager, AssetManager* assetManager) : State(gameStateManager, assetManager)
+{
+	this->textSize = MeasureTextEx(assetManager->AtticAntique, TITLE, fontSize, 0);
+	this->fontPosition.x = (Game::SCREEN_WIDTH * 0.5f) - (textSize.x * 0.5f);
+	this->fontPosition.y = (Game::SCREEN_HEIGHT * 0.5f) - (textSize.y * 3.5f);
+}
+void ThrowState::draw()
+{
+	ClearBackground(Colors::BACKGROUND_COLOR);
+	DrawTextEx(assetManager->AtticAntique, TITLE, fontPosition, fontSize, 0, BLACK);
+	if (IsKeyPressed(KEY_ENTER)) {
+		gameStateManager->setState(new MenuState(gameStateManager, assetManager));
+	}
 }
 void ThrowState::run()
 {

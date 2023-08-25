@@ -1,12 +1,10 @@
 #pragma once
 class GameStateManager;
 class AssetManager;
+class Player;
 
 #include <raylib.h>
 
-#include "../Player.h"
-#include "GameStateManager.h"
-#include "../AssetManager.h"
 
 
 class State

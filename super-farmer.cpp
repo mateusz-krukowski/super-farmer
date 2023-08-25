@@ -17,7 +17,18 @@
 
 int main(void)
 { 
-    std::cout << "Hello World";
+    InitWindow(0,0, "Super Farmer");
+    GameStateManager* gameStateManager = &GameStateManager::getInstance();
+    
+    SetWindowSize(Game::SCREEN_WIDTH, Game::SCREEN_HEIGHT);
+    SetWindowPosition((GetMonitorWidth(0) * 0.5f) - (Game::SCREEN_WIDTH * 0.5f), (GetMonitorHeight(0) * 0.5f) -(Game::SCREEN_HEIGHT * 0.5f) );
+
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        gameStateManager->draw();
+        EndDrawing();
+    }
+    CloseWindow();
     return 0;
 }
 
