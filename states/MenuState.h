@@ -1,6 +1,6 @@
 #pragma once
+
 #include <vector>
-#include "raygui.h"
 #include "State.h"
 #include "../Game.h"
 #include "../Colors.h"

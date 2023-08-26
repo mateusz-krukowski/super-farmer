@@ -2,6 +2,8 @@
 #include <raylib.h>
 
 namespace Game {
-    const int SCREEN_WIDTH = 1152;
-    const int SCREEN_HEIGHT = 648;
+    const static int SCREEN_WIDTH = 1152;
+    const static int SCREEN_HEIGHT = 648;
+    static bool run = true;
+
 };

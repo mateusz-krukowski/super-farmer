@@ -1,3 +1,5 @@
+#include <raygui.h>
+#include <iostream>
 #include "MenuState.h"
 #include "GameStateManager.h"
 #include "ThrowState.h"
@@ -11,7 +13,7 @@ MenuState::MenuState(GameStateManager* gameStateManager, AssetManager* assetMana
 
     int buttonWidth = 150;
     int buttonHeight = 40;
-    int buttonSpacing = 10;
+    int buttonSpacing = Game::SCREEN_HEIGHT * 0.06f;
     int numButtons = 4;
     int totalHeight = (buttonHeight + buttonSpacing) * numButtons;
     int startY = Game::SCREEN_HEIGHT * 0.5f - totalHeight * 0.5f;
@@ -26,39 +28,48 @@ MenuState::MenuState(GameStateManager* gameStateManager, AssetManager* assetMana
 
         buttons.push_back(buttonRect);
     }
+
 }
 
-void MenuState::draw() 
-{   
-		ClearBackground(Colors::BACKGROUND_COLOR);
-		DrawTextEx(assetManager->AtticAntique, TITLE, fontPosition, fontSize, 0, Colors::TITLE_COLOR);
-		if(IsKeyPressed(KEY_ENTER)) {
-			gameStateManager->setState(new ThrowState(gameStateManager, assetManager));
-		}
-        for (size_t i = 0; i < buttons.size(); i++) {
-            const char* buttonText;
+void MenuState::draw()
+{
+	GuiSetStyle(TEXTBOX, TEXT_ALIGNMENT, TEXT_ALIGN_CENTER); // raygui
 
-            switch (i) {
-            case 0:
-                buttonText = "Start";
-                break;
-            case 1:
-                buttonText = "Settings";
-                break;
-            case 2:
-                buttonText = "Credits";
-                break;
-            case 3:
-                buttonText = "Exit";
-                break;
-            default:
-                buttonText = "";
-                break;
-            }
+	ClearBackground(Colors::BACKGROUND_COLOR);
+	DrawTextEx(assetManager->AtticAntique, TITLE, fontPosition, fontSize, 0, Colors::TITLE_COLOR);
 
-            GuiButton(buttons[i], "test");
+	if (IsKeyPressed(KEY_ENTER)) {
+		gameStateManager->setState(new ThrowState(gameStateManager, assetManager));
+	}
+
+    for (size_t i = 0; i < buttons.size(); i++) {
+        const char* buttonText;
+
+        switch (i) {
+        case 0:
+            buttonText = "Start";break;
+        case 1:
+            buttonText = "Settings";break;
+        case 2:
+            buttonText = "Credits";break;
+        case 3:
+            buttonText = "Exit";break;
         }
+
+        if (GuiButton(buttons[i], buttonText)) {
+            if (i == 0) {
+                gameStateManager->setState(new ThrowState(gameStateManager, assetManager));
+            }
+            if (i == 3) {
+                std::cout << "Exit";
+                gameStateManager->pop();
+            }
+            // Add conditions for other buttons similarly
+        }
+    }
+
 }
+
 void MenuState::run() {
 
 }

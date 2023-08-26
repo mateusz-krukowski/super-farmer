@@ -1,4 +1,5 @@
 #pragma once
+
 class State;
 class AssetManager;
 #include <stack>

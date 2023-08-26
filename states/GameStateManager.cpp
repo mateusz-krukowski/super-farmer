@@ -14,7 +14,7 @@ GameStateManager& GameStateManager::getInstance()
 }
 
 void GameStateManager::draw()
-{
+{   
     this->peek()->draw();
 }
 

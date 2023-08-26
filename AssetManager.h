@@ -9,7 +9,6 @@ public:
 	~AssetManager();
 	static AssetManager& getInstance();
 	Font AtticAntique = { 0 };
-	void loadFont(Font* font, const char* fontName);
-
+	Font Helvetica = { 0 };
 };
 
