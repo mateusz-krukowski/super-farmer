@@ -58,6 +58,7 @@ void MenuState::draw()
 
         if (GuiButton(buttons[i], buttonText)) {
             if (i == 0) {
+                gameStateManager->getPlayers().reserve(Game::player_num);
                 gameStateManager->setState(new ThrowState(gameStateManager, assetManager));
             }
             if (i == 3) {

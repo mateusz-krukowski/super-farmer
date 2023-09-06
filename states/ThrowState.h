@@ -7,7 +7,8 @@
 class ThrowState : public State
 {
 private:
-	const char TITLE[50] = "Throw\n State";
+	bool hasAlreadyRolledTheDice = false;
+	const char TITLE[50] = "Throw State";
 	Vector2 fontPosition = { 0,0 };
 	Vector2 textSize = { 0.0f, 0.0f };
 	float fontSize = Game::SCREEN_HEIGHT * 0.05f;

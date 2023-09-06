@@ -1,0 +1,25 @@
+# ninja log v5
+1	579	1694012132942454437	CMakeFiles/super_farmer.dir/states/GameStateManager.cpp.o	79ad6ccd6c665468
+2	950	1694012133314453792	CMakeFiles/super_farmer.dir/states/ThrowState.cpp.o	fc98e59310c51e30
+1	890	1694012133254453896	CMakeFiles/super_farmer.dir/states/MenuState.cpp.o	6cd952e62878b13d
+6	609	1694012132973454383	CMakeFiles/super_farmer.dir/states/TradeState.cpp.o	34f0d65b45705528
+580	647	1694012133012454316	CMakeFiles/super_farmer.dir/AssetManager.cpp.o	22b66d18be9d1cbd
+644	1365	1694012133730453070	CMakeFiles/super_farmer.dir/GreenDice.cpp.o	3f9c6fade53da84c
+2	55	1694012132420455343	CMakeFiles/super_farmer.dir/states/State.cpp.o	9edccb7a4128818d
+609	1634	1694012133999452603	CMakeFiles/super_farmer.dir/Player.cpp.o	d420cda327dc48f3
+889	2177	1694012134540451664	CMakeFiles/super_farmer.dir/super-farmer.cpp.o	ba6cd71ca78d7700
+1	644	1694012133009454321	CMakeFiles/super_farmer.dir/Animal.cpp.o	74fe4ed0e21e78b0
+55	889	1694012133254453896	CMakeFiles/super_farmer.dir/Dice.cpp.o	20619b56d5764818
+648	1509	1694012133874452819	CMakeFiles/super_farmer.dir/RedDice.cpp.o	ac0166845cbce3ff
+2	51	1694012359302061534	CMakeFiles/super_farmer.dir/states/State.cpp.o	6d58e7e28968872f
+1	379	1694012359630060964	CMakeFiles/super_farmer.dir/Animal.cpp.o	ac1e4ffef2d8b827
+379	439	1694012359690060860	CMakeFiles/super_farmer.dir/AssetManager.cpp.o	7fdca71e05cce457
+1	515	1694012359765060730	CMakeFiles/super_farmer.dir/states/GameStateManager.cpp.o	9a39df7ca05bdcf8
+2	533	1694012359784060697	CMakeFiles/super_farmer.dir/states/TradeState.cpp.o	6705d513cca9af
+2	648	1694012359899060498	CMakeFiles/super_farmer.dir/states/MenuState.cpp.o	45a67b4ea3b3bd36
+51	771	1694012360022060284	CMakeFiles/super_farmer.dir/Dice.cpp.o	43cdd3d0be683cd0
+2	902	1694012360153060056	CMakeFiles/super_farmer.dir/states/ThrowState.cpp.o	82eaff2f8d428bdc
+515	1356	1694012360606059270	CMakeFiles/super_farmer.dir/GreenDice.cpp.o	626990030d442963
+533	1369	1694012360621059244	CMakeFiles/super_farmer.dir/RedDice.cpp.o	c00c00b4fe534841
+439	1423	1694012360673059154	CMakeFiles/super_farmer.dir/Player.cpp.o	122bec3d5bb3ee59
+649	1764	1694012361013058564	CMakeFiles/super_farmer.dir/super-farmer.cpp.o	4223e0bb4822c5b1

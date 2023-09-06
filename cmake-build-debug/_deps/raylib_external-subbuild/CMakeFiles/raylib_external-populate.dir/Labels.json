@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/CMakeFiles/raylib_external-populate"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/CMakeFiles/raylib_external-populate.rule"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/CMakeFiles/raylib_external-populate-complete.rule"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/raylib_external-populate-prefix/src/raylib_external-populate-stamp/raylib_external-populate-build.rule"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/raylib_external-populate-prefix/src/raylib_external-populate-stamp/raylib_external-populate-configure.rule"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/raylib_external-populate-prefix/src/raylib_external-populate-stamp/raylib_external-populate-download.rule"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/raylib_external-populate-prefix/src/raylib_external-populate-stamp/raylib_external-populate-install.rule"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/raylib_external-populate-prefix/src/raylib_external-populate-stamp/raylib_external-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/raylib_external-populate-prefix/src/raylib_external-populate-stamp/raylib_external-populate-patch.rule"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/raylib_external-populate-prefix/src/raylib_external-populate-stamp/raylib_external-populate-test.rule"
+		},
+		{
+			"file" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/_deps/raylib_external-subbuild/raylib_external-populate-prefix/src/raylib_external-populate-stamp/raylib_external-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"raylib_external-populate"
+		],
+		"name" : "raylib_external-populate"
+	}
+}

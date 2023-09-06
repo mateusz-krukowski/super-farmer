@@ -1,3 +1,4 @@
+#include <cstddef>
 #include "AssetManager.h"
 
 AssetManager::AssetManager() {

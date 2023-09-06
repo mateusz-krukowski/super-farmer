@@ -58,3 +58,8 @@ void GameStateManager::run()
 
     }
 }
+
+std::vector<Player*> GameStateManager::getPlayers()
+{
+    return this->players;
+}

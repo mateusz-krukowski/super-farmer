@@ -16,7 +16,7 @@
 #include "states/GameStateManager.h"
 #include "states/ThrowState.h"
 
-int main(void)
+int main()
 { 
     InitWindow(0,0, "Super Farmer");
     SetExitKey(KEY_NULL); // prevent from exiting with ESC which is set by default

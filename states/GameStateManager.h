@@ -13,7 +13,7 @@ private:
     GameStateManager();
     AssetManager* assetManager;
     std::stack<State*> states;
-
+    std::vector<Player*> players;
 
 public:
     static GameStateManager& getInstance();
@@ -25,4 +25,6 @@ public:
     State* peek();
     void setState(State* state);
     void run();
+
+    std::vector<Player*> getPlayers();
 };

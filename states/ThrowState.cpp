@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
+#include <raylib.h>
 
 #include "ThrowState.h"
+#include "../Dice.h"
 #include "TradeState.h"
 #include "GameStateManager.h"
 
@@ -15,13 +17,34 @@ ThrowState::ThrowState(GameStateManager* gameStateManager, AssetManager* assetMa
 {
 	this->textSize = MeasureTextEx(assetManager->AtticAntique, TITLE, fontSize, 0);
 	this->fontPosition.x = (Game::SCREEN_WIDTH * 0.5f) - (textSize.x * 0.5f);
-	this->fontPosition.y = (Game::SCREEN_HEIGHT * 0.5f) - (textSize.y * 3.5f);
+	this->fontPosition.y = (Game::SCREEN_HEIGHT * 0.5f) - (textSize.y * 8.8f);
 }
 void ThrowState::draw()
 {
+	//draw title 
 	ClearBackground(Colors::BACKGROUND_COLOR);
 	DrawTextEx(assetManager->AtticAntique, TITLE, fontPosition, fontSize, 0, BLACK);
-	if (IsKeyPressed(KEY_ENTER)) {
+
+	//draw dices
+	DrawRectangle(
+		(Game::SCREEN_WIDTH / 2.0) - (Dice::size / 2.0) - Dice::size - 10,
+		(Game::SCREEN_HEIGHT / 2.0)  - (Dice::size / 2.0),
+		Dice::size,
+		Dice::size,
+		Colors::RED_DICE
+	);
+
+	DrawRectangle(
+		(Game::SCREEN_WIDTH / 2.0) - (Dice::size / 2.0) + Dice::size + 10,
+		(Game::SCREEN_HEIGHT / 2.0) - (Dice::size / 2.0),
+		Dice::size,
+		Dice::size,
+		Colors::GREEN_DICE
+	);
+
+	// draw animal tiles
+
+	if (IsKeyPressed(KEY_ESCAPE)) {
 		gameStateManager->setState(new MenuState(gameStateManager, assetManager));
 	}
 }
