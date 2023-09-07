@@ -31,6 +31,7 @@ int main()
         std::cout << "main loop" << std::endl;
         std::cin >> input;
         currentIndex = (currentIndex + 1) % players.size();
+        if (currentPlayer->won()) { std::cout << "Player " << currentIndex << " won" << std::endl; run = false; }
         if (input == "dupa") run = false;
     }
 

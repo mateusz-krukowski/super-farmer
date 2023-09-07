@@ -40,6 +40,7 @@ public:
     void tradeSheepsForPig();
     void tradePigForSheeps();
     void tradePigsForCow();
+    void tradeCowForPigs();
     void tradeCowForBigDog();
     void tradeBigDogForCow();
     void tradeCowsForHorse();
