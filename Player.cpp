@@ -136,8 +136,8 @@ void Player::tradeRabbitsForSheep()
 
 void Player::tradeSheepForRabbits()
 {
-    player->subtractAnimalQuantity(Animal::Sheep, 1);
-    player->addAnimalQuantity(Animal::Rabbit, 6);
+    this->subtractAnimalQuantity(Animal::Sheep, 1);
+    this->addAnimalQuantity(Animal::Rabbit, 6);
 
 }
 

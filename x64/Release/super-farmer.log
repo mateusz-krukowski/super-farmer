@@ -1,0 +1,10 @@
+﻿  GameStateManager.cpp
+  MenuState.cpp
+Z:\Thorlakur\dev\super-farmer\states\MenuState.cpp(24,20): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+Z:\Thorlakur\dev\super-farmer\states\MenuState.cpp(25,13): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+Z:\Thorlakur\dev\super-farmer\states\MenuState.cpp(26,13): warning C4838: conversion from 'int' to 'float' requires a narrowing conversion
+  ThrowState.cpp
+  super-farmer.cpp
+  Generating Code...
+  LINK : Z:\Thorlakur\dev\super-farmer\x64\Release\super-farmer.exe not found or not built by the last incremental link; performing full link
+  super-farmer.vcxproj -> Z:\Thorlakur\dev\super-farmer\x64\Release\super-farmer.exe
