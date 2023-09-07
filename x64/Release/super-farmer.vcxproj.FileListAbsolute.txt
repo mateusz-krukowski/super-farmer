@@ -1,0 +1,3 @@
+Z:\Thorlakur\dev\super-farmer\x64\Release\super-farmer.vcxproj.CopyComplete
+Z:\Thorlakur\dev\super-farmer\x64\Release\super-farmer.exe
+Z:\Thorlakur\dev\super-farmer\x64\Release\raylib.dll
