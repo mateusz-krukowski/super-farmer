@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.26"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "super_farmer",
+					"name" : "super-farmer",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "super_farmer::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-super_farmer-Debug-bfc7800000d155f9fbf4.json",
-					"name" : "super_farmer",
+					"id" : "super-farmer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-super-farmer-Release-d9b854dbd0b2e488fe3e.json",
+					"name" : "super-farmer",
 					"projectIndex" : 0
 				}
 			]
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug",
+		"build" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-release",
 		"source" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer"
 	},
 	"version" : 

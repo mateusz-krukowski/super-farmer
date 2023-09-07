@@ -1,0 +1,15 @@
+# ninja log v5
+52	703	1694095922140415437	CMakeFiles/super-farmer.dir/Dice.cpp.o	41d300a5559589cf
+0	489	1694095921926415864	CMakeFiles/super-farmer.dir/Animal.cpp.o	4dedc76b869f670e
+3413	3558	1694095924991409744	super-farmer	61e8e2a9ab4ccaf7
+403	1826	1694095923263413194	CMakeFiles/super-farmer.dir/Player.cpp.o	2d83e916a4bc9644
+489	1147	1694095922584414550	CMakeFiles/super-farmer.dir/RedDice.cpp.o	44609bd29e84958b
+1	403	1694095921840416036	CMakeFiles/super-farmer.dir/states/GameStateManager.cpp.o	996eaf5c854f909a
+0	24	1694103075063849160	build.ninja	c9edff5724f57764
+1	750	1694095922187415343	CMakeFiles/super-farmer.dir/states/MenuState.cpp.o	26d710d52e54f509
+1	52	1694095921489416737	CMakeFiles/super-farmer.dir/states/State.cpp.o	3efc8d1978b390a2
+1	816	1694095922253415211	CMakeFiles/super-farmer.dir/states/ThrowState.cpp.o	8f406b587dc519fb
+363	415	1694095921852416012	CMakeFiles/super-farmer.dir/AssetManager.cpp.o	7349cd856c0a95ca
+1	361	1694095921799416118	CMakeFiles/super-farmer.dir/states/TradeState.cpp.o	da65688c9d51e12f
+703	3413	1694095924850410025	CMakeFiles/super-farmer.dir/super-farmer.cpp.o	44d355f04624b209
+415	1172	1694095922610414498	CMakeFiles/super-farmer.dir/GreenDice.cpp.o	e5a2e771261fdfe7

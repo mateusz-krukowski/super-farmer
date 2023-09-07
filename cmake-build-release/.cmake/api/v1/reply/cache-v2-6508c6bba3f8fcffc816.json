@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "Release"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug"
+			"value" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-release"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-release/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "super_farmer"
+			"value" : "super-farmer"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1138,7 +1138,7 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "super_farmer_BINARY_DIR",
+			"name" : "super-farmer_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1147,10 +1147,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug"
+			"value" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-release"
 		},
 		{
-			"name" : "super_farmer_IS_TOP_LEVEL",
+			"name" : "super-farmer_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1162,7 +1162,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "super_farmer_SOURCE_DIR",
+			"name" : "super-farmer_SOURCE_DIR",
 			"properties" : 
 			[
 				{

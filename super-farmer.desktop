@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Super Farmer
+Exec=/super-farmer
+Icon=/assets/farmer.ico
+Terminal=false
+Type=Application

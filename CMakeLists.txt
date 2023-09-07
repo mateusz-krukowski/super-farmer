@@ -1,15 +1,8 @@
 cmake_minimum_required(VERSION 3.26)
-project(super_farmer)
-
+project(super-farmer)
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(/usr/include/raylib/include)
-link_directories(/usr/include/raylib/lib)
-include_directories(.)
-include_directories(states)
-
-
-add_executable(super_farmer
+add_executable(super-farmer
         states/GameStateManager.cpp
         states/GameStateManager.h
         states/MenuState.cpp
@@ -37,3 +30,6 @@ add_executable(super_farmer
         super-farmer.cpp
         super-farmer.rc)
 
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/assets DESTINATION ${CMAKE_BINARY_DIR})
+target_include_directories(super-farmer PRIVATE "/usr/include/raylib/include")
+target_link_libraries(super-farmer "/usr/include/raylib/lib/libraylib.a")

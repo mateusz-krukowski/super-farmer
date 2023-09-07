@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: super-farmer
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Debug
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/
+cmake_ninja_workdir = /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-release/
 # =============================================================================
 # Object build statements for EXECUTABLE target super-farmer
 
@@ -49,86 +49,86 @@ cmake_ninja_workdir = /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-b
 
 build cmake_object_order_depends_target_super-farmer: phony || CMakeFiles/super-farmer.dir
 
-build CMakeFiles/super-farmer.dir/states/GameStateManager.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/GameStateManager.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/states/GameStateManager.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/GameStateManager.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/states/GameStateManager.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir/states
 
-build CMakeFiles/super-farmer.dir/states/MenuState.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/MenuState.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/states/MenuState.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/MenuState.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/states/MenuState.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir/states
 
-build CMakeFiles/super-farmer.dir/states/State.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/State.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/states/State.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/State.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/states/State.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir/states
 
-build CMakeFiles/super-farmer.dir/states/ThrowState.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/ThrowState.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/states/ThrowState.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/ThrowState.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/states/ThrowState.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir/states
 
-build CMakeFiles/super-farmer.dir/states/TradeState.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/TradeState.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/states/TradeState.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/states/TradeState.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/states/TradeState.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir/states
 
-build CMakeFiles/super-farmer.dir/Animal.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/Animal.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/Animal.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/Animal.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/Animal.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir
 
-build CMakeFiles/super-farmer.dir/AssetManager.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/AssetManager.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/AssetManager.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/AssetManager.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/AssetManager.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir
 
-build CMakeFiles/super-farmer.dir/Dice.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/Dice.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/Dice.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/Dice.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/Dice.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir
 
-build CMakeFiles/super-farmer.dir/GreenDice.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/GreenDice.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/GreenDice.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/GreenDice.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/GreenDice.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir
 
-build CMakeFiles/super-farmer.dir/Player.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/Player.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/Player.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/Player.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/Player.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir
 
-build CMakeFiles/super-farmer.dir/RedDice.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/RedDice.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/RedDice.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/RedDice.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/RedDice.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir
 
-build CMakeFiles/super-farmer.dir/super-farmer.cpp.o: CXX_COMPILER__super-farmer_unscanned_Debug /home/mateusz/Documents/Thorlakur/dev/super-farmer/super-farmer.cpp || cmake_object_order_depends_target_super-farmer
+build CMakeFiles/super-farmer.dir/super-farmer.cpp.o: CXX_COMPILER__super-farmer_unscanned_Release /home/mateusz/Documents/Thorlakur/dev/super-farmer/super-farmer.cpp || cmake_object_order_depends_target_super-farmer
   DEP_FILE = CMakeFiles/super-farmer.dir/super-farmer.cpp.o.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  FLAGS = -O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -I/usr/include/raylib/include
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   OBJECT_FILE_DIR = CMakeFiles/super-farmer.dir
@@ -141,8 +141,8 @@ build CMakeFiles/super-farmer.dir/super-farmer.cpp.o: CXX_COMPILER__super-farmer
 #############################################
 # Link the executable super-farmer
 
-build super-farmer: CXX_EXECUTABLE_LINKER__super-farmer_Debug CMakeFiles/super-farmer.dir/states/GameStateManager.cpp.o CMakeFiles/super-farmer.dir/states/MenuState.cpp.o CMakeFiles/super-farmer.dir/states/State.cpp.o CMakeFiles/super-farmer.dir/states/ThrowState.cpp.o CMakeFiles/super-farmer.dir/states/TradeState.cpp.o CMakeFiles/super-farmer.dir/Animal.cpp.o CMakeFiles/super-farmer.dir/AssetManager.cpp.o CMakeFiles/super-farmer.dir/Dice.cpp.o CMakeFiles/super-farmer.dir/GreenDice.cpp.o CMakeFiles/super-farmer.dir/Player.cpp.o CMakeFiles/super-farmer.dir/RedDice.cpp.o CMakeFiles/super-farmer.dir/super-farmer.cpp.o | /usr/include/raylib/lib/libraylib.a
-  FLAGS = -g
+build super-farmer: CXX_EXECUTABLE_LINKER__super-farmer_Release CMakeFiles/super-farmer.dir/states/GameStateManager.cpp.o CMakeFiles/super-farmer.dir/states/MenuState.cpp.o CMakeFiles/super-farmer.dir/states/State.cpp.o CMakeFiles/super-farmer.dir/states/ThrowState.cpp.o CMakeFiles/super-farmer.dir/states/TradeState.cpp.o CMakeFiles/super-farmer.dir/Animal.cpp.o CMakeFiles/super-farmer.dir/AssetManager.cpp.o CMakeFiles/super-farmer.dir/Dice.cpp.o CMakeFiles/super-farmer.dir/GreenDice.cpp.o CMakeFiles/super-farmer.dir/Player.cpp.o CMakeFiles/super-farmer.dir/RedDice.cpp.o CMakeFiles/super-farmer.dir/super-farmer.cpp.o | /usr/include/raylib/lib/libraylib.a
+  FLAGS = -O3 -DNDEBUG
   LINK_LIBRARIES = /usr/include/raylib/lib/libraylib.a
   OBJECT_DIR = CMakeFiles/super-farmer.dir
   POST_BUILD = :
@@ -152,34 +152,10 @@ build super-farmer: CXX_EXECUTABLE_LINKER__super-farmer_Debug CMakeFiles/super-f
 
 
 #############################################
-# Utility command for package
-
-build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug && /home/mateusz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cpack --config ./CPackConfig.cmake
-  DESC = Run CPack packaging tool...
-  pool = console
-  restat = 1
-
-build package: phony CMakeFiles/package.util
-
-
-#############################################
-# Utility command for package_source
-
-build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug && /home/mateusz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cpack --config ./CPackSourceConfig.cmake /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug/CPackSourceConfig.cmake
-  DESC = Run CPack packaging tool for source...
-  pool = console
-  restat = 1
-
-build package_source: phony CMakeFiles/package_source.util
-
-
-#############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug && /home/mateusz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-release && /home/mateusz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -190,7 +166,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug && /home/mateusz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/mateusz/Documents/Thorlakur/dev/super-farmer -B/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug
+  COMMAND = cd /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-release && /home/mateusz/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/mateusz/Documents/Thorlakur/dev/super-farmer -B/home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-release
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -206,7 +182,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-debug
+# Folder: /home/mateusz/Documents/Thorlakur/dev/super-farmer/cmake-build-release
 
 build all: phony super-farmer
 

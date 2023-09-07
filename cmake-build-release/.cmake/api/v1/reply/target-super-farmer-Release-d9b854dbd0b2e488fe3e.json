@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "super_farmer"
+			"path" : "super-farmer"
 		}
 	],
 	"backtrace" : 1,
@@ -11,8 +11,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"link_directories",
-			"include_directories"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -26,31 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 12,
+				"line" : 5,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 7,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 6,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 8,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 9,
+				"line" : 34,
 				"parent" : 0
 			}
 		]
@@ -61,7 +49,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++14 -fdiagnostics-color=always"
+					"fragment" : "-O3 -DNDEBUG -std=gnu++14 -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
@@ -69,14 +57,6 @@
 				{
 					"backtrace" : 3,
 					"path" : "/usr/include/raylib/include"
-				},
-				{
-					"backtrace" : 4,
-					"path" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/."
-				},
-				{
-					"backtrace" : 5,
-					"path" : "/home/mateusz/Documents/Thorlakur/dev/super-farmer/states"
 				}
 			],
 			"language" : "CXX",
@@ -105,13 +85,13 @@
 			]
 		}
 	],
-	"id" : "super_farmer::@6890427a1f51a3e7e1df",
+	"id" : "super-farmer::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -120,14 +100,14 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/usr/include/raylib/lib",
-				"role" : "libraryPath"
+				"fragment" : "/usr/include/raylib/lib/libraylib.a",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "super_farmer",
-	"nameOnDisk" : "super_farmer",
+	"name" : "super-farmer",
+	"nameOnDisk" : "super-farmer",
 	"paths" : 
 	{
 		"build" : ".",
